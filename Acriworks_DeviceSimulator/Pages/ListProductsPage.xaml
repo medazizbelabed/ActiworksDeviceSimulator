@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Acriworks_DeviceSimulator.ListProductsPage">
+		<ContentPage.Content>
+       <StackLayout Orientation="Vertical" Margin="16,16,16,16">
+			<Button Clicked="AddProductClicked" Text="Add Device" />
+			<ListView x:Name="prodcutList" RowHeight="60" SeparatorColor="#dddddd"   >
+                      <ListView.ItemTemplate>
+							<DataTemplate>
+								<ViewCell>
+									<StackLayout>
+										<Grid Margin="0,0,0,0">
+											<Grid.RowDefinitions>
+												<RowDefinition Height="10" />
+												<RowDefinition Height="44" />
+												<RowDefinition Height="10" />
+											</Grid.RowDefinitions>
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="10" />
+												<ColumnDefinition Width="150" />
+												<ColumnDefinition Width="20" />
+												<ColumnDefinition Width="*" />
+												<ColumnDefinition Width="44" />
+												<ColumnDefinition Width="44" />
+											</Grid.ColumnDefinitions>
+											<StackLayout Margin="0,-10,0,0" Orientation="Vertical" Grid.Row="1" VerticalOptions="Center" Grid.Column="1" Grid.ColumnSpan="2">
+												<Label Font="HelveticaNeue-Light" Text="{Binding Name}" FontSize="14" TextColor="Black" />
+												<Label Font="HelveticaNeue-Light" Margin="0,-5,0,0" FontSize="14" Text="{Binding State}" TextColor="##0e66ac" />
+											</StackLayout>
+											<Label FontSize="14" Text="{Binding level}" TextColor="#0e66ac" Grid.Row="1" Grid.Column="4" WidthRequest="44" HeightRequest="44" HorizontalOptions="Center" />
+										</Grid>
+									</StackLayout>
+								</ViewCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+				</ListView>
+<Label x:Name="dataFromServer" HorizontalOptions="Center" VerticalTextAlignment="Center"/> 
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

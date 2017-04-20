@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{DF87594A-A213-482A-8BBA-06939D370359}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Acriworks_DeviceSimulator/Pages/SelectedProductPage.cs">
+    <Files>
+      <File FileName="Acriworks_DeviceSimulator/Pages/ListProductsPage.xaml.cs" Line="107" Column="40" />
+      <File FileName="Acriworks_DeviceSimulator/Pages/AddProductPage.xaml" Line="1" Column="1" />
+      <File FileName="Acriworks_DeviceSimulator/Pages/SelectedProductPage.cs" Line="198" Column="33" />
+      <File FileName="Acriworks_DeviceSimulator/Pages/AddProductPage.xaml.cs" Line="14" Column="26" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Acriworks__DeviceSimulator.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.D64B5C0F-0182-4B20-B081-855873B439E2" />
+</Properties>

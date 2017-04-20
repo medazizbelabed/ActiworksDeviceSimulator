@@ -1,0 +1,25 @@
+﻿{
+  "dependencies": {
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "NETStandard.Library": "1.6.1",
+    "rda.SocketsForPCL": "2.0.2",
+    "sqlite-net-pcl": "1.3.1",
+    "SQLite.Net-PCL": "3.1.1",
+    "SQLite.Net.Core-PCL": "3.1.1",
+    "SQLiteNetExtensions": "1.3.0",
+    "SQLitePCLRaw.bundle_green": "1.1.2",
+    "SQLitePCLRaw.core": "1.1.2",
+    "System.Net.Sockets": "4.3.0",
+    "TwinTechsForms.NControl.SvgImageView": "0.0.3",
+    "Xamarin.Forms": "2.3.4.231"
+  },
+  "frameworks": {
+    "netstandard1.4": {
+      "imports": [
+        "dnxcore50",
+        "portable-net451+win8"
+      ]
+    }
+  },
+  "supports": {}
+}

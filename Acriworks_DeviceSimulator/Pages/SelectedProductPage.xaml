@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:controls="clr-namespace:TwinTechsForms.NControl;assembly=TwinTechsForms.NControl.SvgImageView" 
+	x:Class="Acriworks_DeviceSimulator.SelectedProductPage">
+	<ContentPage.Content>
+		<StackLayout Margin="16,16,16,16" Orientation="Vertical">
+		<StackLayout HorizontalOptions="Center" Orientation="Vertical">
+					<Grid Padding="0,0,0,0">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition x:Name="a1" Width="180" />
+							<ColumnDefinition Width="30" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="44" />
+							<RowDefinition Height="*" />
+						</Grid.RowDefinitions>
+						<Button Font="HelveticaNeue-Light" Clicked="StaterClicked" TextColor ="#11639f" Grid.Row="0" Grid.ColumnSpan="2" BackgroundColor="White" BorderColor="#e8e8e8" BorderWidth="1" >
+						     
+				        </Button>	
+						<Label Font="HelveticaNeue-Light" InputTransparent="true" FontSize="18" Grid.Row="0" Grid.Column="0" Text="State" TextColor="Black" VerticalOptions="Center" Margin="10,0,0,0" />
+						<controls:SvgImageView InputTransparent="true"  SvgAssembly="{Binding SvgAssembly}" x:Name="StateImage"  SvgPath="Acriworks_DeviceSimulator.SVG.DeviceOFF.svg" Grid.Row="0" Grid.Column="1" WidthRequest="18" HeightRequest="18"  VerticalOptions="Center"  />
+					</Grid>
+
+				<Grid  Padding="0,0,0,0">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="44" />
+							<ColumnDefinition Width="4" />
+							<ColumnDefinition Width="100" />
+							<ColumnDefinition Width="4" />
+							<ColumnDefinition Width="44" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition  Height="35" />
+							<RowDefinition  Height="44" />
+						</Grid.RowDefinitions>
+						<Label  Font="HelveticaNeue-Light"  Grid.Row="0" FontSize="18" Grid.Column="2" Text="Level" TextColor="Black" HorizontalOptions="Center" VerticalOptions="Center" />
+					
+						<Button Clicked="LevelDownClicked"  Grid.Row="1" Grid.Column="0" BackgroundColor="White" BorderColor="#e8e8e8" BorderRadius="22" BorderWidth="1">
+								
+				        </Button>	
+						<Image InputTransparent="true"  Source="button_round_minus.png" Grid.Row="1" Grid.Column="0" WidthRequest="42" HeightRequest="42" VerticalOptions="Center" Margin="0,0,0,0" /> 
+
+						<controls:SvgImageView InputTransparent="true"  x:Name="levelImage" SvgAssembly="{Binding SvgAssembly}" SvgPath="Acriworks_DeviceSimulator.SVG.Level_0.svg" Grid.Row="1" HeightRequest="35" WidthRequest="80" Grid.Column="2" VerticalOptions="Center" Margin="-5,15,-22,0"  />
+
+						<Button Clicked="LevelUpClicked" Grid.Row="1" Grid.Column="4" BackgroundColor="White" BorderColor="#e8e8e8" BorderRadius="22" BorderWidth="1" >
+						</Button>
+						<Image InputTransparent="true" Source="button_round_pluss.png" Grid.Row="1" Grid.Column="4" WidthRequest="40" HeightRequest="40" Margin="0,0,0,0" VerticalOptions="Center" /> 
+					</Grid>
+				<Button Clicked="SendUDPMessageClicked" Text="Send Device Info" />
+		</StackLayout>
+			</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
